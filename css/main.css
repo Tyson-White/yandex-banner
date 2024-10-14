@@ -9,6 +9,7 @@ div {
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 body {
@@ -35,7 +36,7 @@ button {
     transform: translate(-50%, -50%);
 
     width: 400px;
-    height: 95dvh;
+    height: 98dvh;
 
     background-color: #fff;
     border-radius: 10px;
@@ -89,6 +90,7 @@ button {
     height: 100%;
     display: flex;
     align-items: flex-end;
+
 }
 
 .container__showcase__grid__item__product img {
@@ -96,6 +98,19 @@ button {
     display: flex;
     
     animation: shakeProduct 0.9s linear infinite;
+
+    
+}
+
+.addedAnimate {
+    animation: productAdded 0.5s ease;
+}
+
+.dragged {
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+                    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(1px 1px 0 black) 
+            drop-shadow(-1px -1px 0 black);
 }
 
 
@@ -110,9 +125,9 @@ button {
     width: 100%;
 }
 
-.container__cart .container__cart__payment {
+.container .container__payment {
     position: absolute;
-    bottom: 7.5rem;
+    bottom: -12rem;
     left: 50%;
     transform: translate(-50%, 20px);
 
@@ -159,9 +174,9 @@ button {
     animation: buttonShine 1s ease;
 }
 
-.container__cart .payment_show {
+.container .payment_show {
     transform: translate(-50%, 0px);
     opacity: 1;
-    z-index: 1;
+    z-index: 2;
 }
 

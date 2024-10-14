@@ -1,7 +1,10 @@
 import { DragNDrop } from "./dnd.js"
-console.log('dsadsa')
+import { removeAllFromCart } from "./utils.js"
+
+console.log('Yandex Drag and Drop. \nGITHUB: https://github.com/Tyson-White/yandex-banner')
+
 const cart = document.querySelector('.container__cart')
-const button = document.querySelector('.container__cart__payment')
+const button = document.querySelector('.container__payment')
 
 const dnd = new DragNDrop(cart)
 
@@ -34,4 +37,6 @@ document.addEventListener('pointerup', () => {
 })
 
 
-
+if (cart) {
+    cart.addEventListener('click', (e) => removeAllFromCart(e))
+}

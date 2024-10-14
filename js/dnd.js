@@ -1,4 +1,4 @@
-import { checkCartCollision, distanceToCartSurface, toggleTransition } from "./utils.js"
+import { checkCartCollision, distanceToCartSurface, toggleClassName, toggleTransition } from "./utils.js"
 
 export class DragNDrop {
 
@@ -34,6 +34,8 @@ export class DragNDrop {
         this.draggedTarget = target;
 
         this.setShifts(target, event.clientX, event.clientY);
+
+        // this.draggedTarget.nextSibling.classList.add('dragged')
 
     }
 
@@ -76,6 +78,8 @@ export class DragNDrop {
     handleMoveToCart() {
 
         toggleTransition(this.draggedTarget);
+
+        toggleClassName(this.cart, 'addedAnimate')
 
         this.draggedTarget.style.top = distanceToCartSurface(this.draggedTarget, this.cart) + 'px';
 

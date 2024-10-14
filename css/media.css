@@ -51,6 +51,10 @@
     .container__cart .container__cart__payment {
         bottom: 3.2rem;
     }
+
+    .container .container__payment {
+        bottom: -9rem;
+    }
     
 }
 
@@ -78,6 +82,10 @@
 
     .container__cart .container__cart__payment {
         bottom: 22px;
+    }
+
+    .container .container__payment {
+        bottom: -9rem;
     }
 
 }
