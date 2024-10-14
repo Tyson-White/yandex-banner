@@ -35,7 +35,7 @@ export class DragNDrop {
 
         this.setShifts(target, event.clientX, event.clientY);
 
-        // this.draggedTarget.nextSibling.classList.add('dragged')
+        target.querySelector('.img').classList.add('dragged')
 
     }
 
@@ -67,9 +67,12 @@ export class DragNDrop {
 
                 this.handleMoveToCart(this.draggedTarget)
                 this.addedCount += 1
+
             }
+
+            this.draggedTarget.querySelector('.img').classList.toggle('dragged')
         }
-    
+
         this.isDrag = false;
         this.draggedTarget = null;
 

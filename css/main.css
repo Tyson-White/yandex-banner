@@ -96,10 +96,10 @@ button {
 .container__showcase__grid__item__product img {
     width: 100%;
     display: flex;
-    
-    animation: shakeProduct 0.9s linear infinite;
+}
 
-    
+.animate {
+    animation: shakeProduct 0.9s linear infinite;
 }
 
 .addedAnimate {
