@@ -25,10 +25,9 @@ export const distanceToCartSurface = (target, cart) => {
     
     const screenH = window.screen.height;
 
-    const multipler = screenH < 810 ? 3.4 : screenH < 1080 ? 3.2 : 0
-    const cartOffset = screenH > 1080 ? 230 : 0
+    const cartOffset = (cartRect.y + cartRect.height / 2).toFixed(0)
 
-    return cartRect.y + cartOffset - targetParentRect.y - (targetRect.height - targetParentRect.height * multipler);
+    return cartOffset - (targetParentRect.y + (targetRect.height));
 
 }
 

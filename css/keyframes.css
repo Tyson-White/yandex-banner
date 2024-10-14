@@ -1,0 +1,30 @@
+@keyframes shakeProduct {
+    0% {
+        transform: translate(0, 0);
+    }
+    33% {
+        transform: translate(0, -3px);
+    }
+    66% {
+        transform: translate(0, 3px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes buttonShine {
+    0% {
+        right: -3rem;
+        top: -10rem;
+        transform: rotate(-10deg);
+    }
+    50% {
+        right: 30rem;
+        top: -10rem;
+        transform: rotate(-10deg);
+    }
+    100% {
+
+    }
+}

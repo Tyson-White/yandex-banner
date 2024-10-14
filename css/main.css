@@ -59,8 +59,8 @@ button {
 }
 
 .container .container__showcase {
-    min-width: 18.097rem;
-    min-height: 36.931rem;
+    width: 18.097rem;
+    height: 36.931rem;
 
     background-image: url('./../assets/img/showcase.svg');
     background-repeat: no-repeat;
@@ -165,54 +165,3 @@ button {
     z-index: 1;
 }
 
-@keyframes shakeProduct {
-    0% {
-        transform: translate(0, 0);
-    }
-    33% {
-        transform: translate(0, -3px);
-    }
-    66% {
-        transform: translate(0, 3px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes buttonShine {
-    0% {
-        right: -3rem;
-        top: -10rem;
-        transform: rotate(-10deg);
-    }
-    50% {
-        right: 30rem;
-        top: -10rem;
-        transform: rotate(-10deg);
-    }
-    100% {
-
-    }
-}
-
-@media (max-height: 1080px)  {
-    .container {
-        top: 27rem;
-        transform: translate(-50%, -50%) scale(0.8);
-    }
-}
-
-@media (max-height: 900px)  {
-    .container {
-        top: 20rem;
-        transform: translate(-50%, -50%) scale(0.8);
-    }
-}
-
-@media (max-height: 810px)  {
-    .container {
-        top: 15rem;
-        transform: translate(-50%, -50%) scale(0.6);
-    }
-}
